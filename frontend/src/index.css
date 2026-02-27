@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Lato:wght@300;400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 1rem;
+
+    /* Pastel Romantic Palette */
+    --background: 0.98 0.008 30;
+    --foreground: 0.25 0.04 340;
+
+    --card: 0.99 0.006 20;
+    --card-foreground: 0.25 0.04 340;
+
+    --popover: 0.99 0.006 20;
+    --popover-foreground: 0.25 0.04 340;
+
+    --primary: 0.72 0.12 350;
+    --primary-foreground: 0.99 0.005 20;
+
+    --secondary: 0.92 0.04 290;
+    --secondary-foreground: 0.35 0.06 300;
+
+    --muted: 0.95 0.015 30;
+    --muted-foreground: 0.55 0.04 340;
+
+    --accent: 0.88 0.06 50;
+    --accent-foreground: 0.35 0.06 30;
+
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+
+    --border: 0.88 0.03 340;
+    --input: 0.88 0.03 340;
+    --ring: 0.72 0.12 350;
+
+    /* Custom romantic tokens */
+    --soft-pink: 0.85 0.1 350;
+    --lavender: 0.82 0.07 290;
+    --cream: 0.97 0.015 60;
+    --baby-peach: 0.92 0.06 50;
+    --rose-deep: 0.65 0.15 355;
+    --heart-red: 0.68 0.18 10;
+  }
+
+  * {
+    @apply border-border;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .font-handwritten {
+    font-family: 'Dancing Script', cursive;
+  }
+
+  .font-serif-elegant {
+    font-family: 'Playfair Display', serif;
+  }
+
+  /* Glow button */
+  .btn-romantic {
+    @apply relative inline-flex items-center justify-center px-8 py-3 rounded-full font-semibold transition-all duration-300;
+    background: linear-gradient(135deg, oklch(0.82 0.12 350), oklch(0.75 0.1 290));
+    color: white;
+    box-shadow: 0 4px 20px oklch(0.72 0.12 350 / 0.4);
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.03em;
+  }
+
+  .btn-romantic:hover {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 8px 30px oklch(0.72 0.12 350 / 0.55);
+  }
+
+  .btn-romantic:active {
+    transform: translateY(0) scale(0.98);
+  }
+
+  /* Section fade-in */
+  .section-hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  .section-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Card hover */
+  .love-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .love-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 16px 40px oklch(0.72 0.12 350 / 0.25);
+  }
+}
+
+@layer utilities {
+  /* Floating hearts animation */
+  @keyframes float-up {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 0.8;
+    }
+    50% {
+      opacity: 0.6;
+    }
+    100% {
+      transform: translateY(-100vh) rotate(20deg);
+      opacity: 0;
+    }
+  }
+
+  @keyframes float-gentle {
+    0%, 100% {
+      transform: translateY(0px) rotate(-5deg);
+    }
+    50% {
+      transform: translateY(-12px) rotate(5deg);
+    }
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% {
+      box-shadow: 0 0 10px oklch(0.72 0.12 350 / 0.4), 0 0 20px oklch(0.72 0.12 350 / 0.2);
+    }
+    50% {
+      box-shadow: 0 0 20px oklch(0.72 0.12 350 / 0.7), 0 0 40px oklch(0.72 0.12 350 / 0.4);
+    }
+  }
+
+  @keyframes sparkle {
+    0%, 100% {
+      opacity: 0;
+      transform: scale(0) rotate(0deg);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1) rotate(180deg);
+    }
+  }
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes loading-pulse {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+    50% {
+      transform: scale(1.15);
+      opacity: 1;
+    }
+  }
+
+  @keyframes shimmer {
+    0% { background-position: -200% center; }
+    100% { background-position: 200% center; }
+  }
+
+  @keyframes bounce-heart {
+    0%, 100% { transform: translateY(0) scale(1); }
+    30% { transform: translateY(-8px) scale(1.1); }
+    60% { transform: translateY(-4px) scale(1.05); }
+  }
+
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.2; transform: scale(0.8); }
+    50% { opacity: 1; transform: scale(1.2); }
+  }
+
+  @keyframes music-pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+  }
+
+  .animate-float-up {
+    animation: float-up linear infinite;
+  }
+
+  .animate-float-gentle {
+    animation: float-gentle 3s ease-in-out infinite;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  .animate-sparkle {
+    animation: sparkle 2s ease-in-out infinite;
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up 0.8s ease forwards;
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.6s ease forwards;
+  }
+
+  .animate-loading-pulse {
+    animation: loading-pulse 1.5s ease-in-out infinite;
+  }
+
+  .animate-bounce-heart {
+    animation: bounce-heart 1.5s ease-in-out infinite;
+  }
+
+  .animate-twinkle {
+    animation: twinkle ease-in-out infinite;
+  }
+
+  .animate-music-pulse {
+    animation: music-pulse 1s ease-in-out infinite;
+  }
+}

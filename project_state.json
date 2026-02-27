@@ -1,0 +1,184 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 7,
+  "summary": "A cute, romantic, single-page website dedicated to Ananya, built with HTML/CSS/JS. Pastel-themed (pink, lavender, cream, peach) with smooth animations, handwritten + serif fonts, and responsive design. Includes: loading screen, hero section with popup, love cards grid, future timeline, interactive love counter, password-protected secret message (with long poetic message), footer, a new 'Our Little Comparison 🤍' section with arms photo. Background music feature has been removed.",
+  "architectural_notes": [
+    "Single-page HTML/CSS/JS app — no frameworks",
+    "Pastel color palette: soft pink, lavender, cream, baby peach",
+    "Typography: handwritten font + elegant serif mix",
+    "Fully responsive for mobile and desktop"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Edit Images\n- Lightly enhance warmth and soft-focus the background to give a romantic aesthetic feel (pic.jpeg > comparison.dim_930x1240.jpg)",
+  "existing_features": [
+    {
+      "id": "feature-apply-a-cohesive-pastel-visual-theme-across-the-entire-app-soft-pink-ffb7c5-lavender-c9b8e8-cream-fff8f0-and-baby-peach-ffdab9-color-palette-use-a-mix-of-a-handwritten-google-font-e-g-dancing-script-and-an-elegant-serif-e-g-playfair-display-for-typography-all-ui-elements-must-feel-romantic-classy-and-modern-not-childish-the-design-must-be-fully-responsive-for-mobile-and-desktop",
+      "title": "Apply a cohesive pastel visual theme across the entire app: soft pink (#FFB7C5), lavender (#C9B8E8), cream (#FFF8F0), and baby peach (#FFDAB9) color palette. Use a mix of a handwritten Google Font (e.g. 'Dancing Script') and an elegant serif (e.g. 'Playfair Display') for typography. All UI elements must feel romantic, classy, and modern — not childish. The design must be fully responsive for mobile and desktop.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-a-full-screen-loading-screen-that-displays-the-text-preparing-something-special-for-ananya-with-a-soft-animated-heart-or-sparkle-it-should-fade-out-smoothly-after-2-3-seconds-and-reveal-the-main-page",
+      "title": "Implement a full-screen loading screen that displays the text 'Preparing something special for Ananya…' with a soft animated heart or sparkle. It should fade out smoothly after 2–3 seconds and reveal the main page.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-hero-section-as-the-first-visible-section-after-the-loading-screen-include-a-large-heading-for-my-ananya-a-subheading-made-with-love-by-viaan-an-animated-background-with-floating-hearts-or-soft-glowing-particles-and-a-glowing-button-labeled-click-if-you-love-me-when-the-button-is-clicked-show-a-cute-modal-popup-with-the-message-too-late-you-re-already-mine-forever-and-a-close-button",
+      "title": "Build the Hero section as the first visible section after the loading screen. Include: a large heading 'For My Ananya 🤍', a subheading 'Made with love by Viaan', an animated background with floating hearts or soft glowing particles, and a glowing button labeled 'Click if you love me'. When the button is clicked, show a cute modal/popup with the message 'Too late, you're already mine forever 💍' and a close button.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-things-i-love-about-you-section-as-a-responsive-grid-of-6-romantic-cards-each-card-displays-one-of-the-following-lines-your-smile-the-way-you-say-pagal-your-hugs-the-way-you-get-jealous-your-soft-voice-the-calm-i-feel-with-you-each-card-must-have-a-soft-hover-animation-e-g-slight-lift-glow-scale-cards-should-use-pastel-backgrounds-with-soft-shadows",
+      "title": "Build the 'Things I Love About You' section as a responsive grid of 6 romantic cards. Each card displays one of the following lines: 'Your smile', 'The way you say \"pagal\"', 'Your hugs', 'The way you get jealous', 'Your soft voice', 'The calm I feel with you'. Each card must have a soft hover animation (e.g. slight lift/glow/scale). Cards should use pastel backgrounds with soft shadows.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-our-future-section-as-a-vertical-timeline-layout-with-the-following-milestones-in-order-more-school-memories-cute-little-dates-cooking-dosa-for-you-late-night-calls-matching-outfits-marriage-each-milestone-should-have-a-small-icon-or-heart-marker-add-a-subtle-sparkle-or-twinkle-css-animation-to-the-timeline-items",
+      "title": "Build the 'Our Future' section as a vertical timeline layout with the following milestones in order: 'More school memories', 'Cute little dates', 'Cooking dosa for you', 'Late night calls', 'Matching outfits', 'Marriage 💍'. Each milestone should have a small icon or heart marker. Add a subtle sparkle or twinkle CSS animation to the timeline items.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-interactive-love-counter-section-display-the-heading-how-much-do-i-love-you-a-glowing-button-that-increments-a-counter-number-by-1-each-time-it-is-clicked-no-upper-limit-and-the-static-text-still-not-enough-below-the-counter-the-number-should-update-in-real-time-using-react-state",
+      "title": "Build the 'Interactive Love Counter' section. Display the heading 'How much do I love you?', a glowing button that increments a counter number by 1 each time it is clicked (no upper limit), and the static text 'Still not enough.' below the counter. The number should update in real-time using React state.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-secret-message-section-with-a-password-protected-reveal-show-a-password-input-field-and-a-hint-text-what-do-you-call-me-when-the-user-enters-the-correct-password-case-insensitive-hide-the-input-and-reveal-a-heartfelt-paragraph-you-are-only-mine-ananya-no-matter-where-life-takes-us-i-will-always-choose-you-today-tomorrow-and-every-day-after-you-are-my-calm-my-happiness-and-my-home-forever-and-always-only-yours-if-the-wrong-password-is-entered-show-a-gentle-error-message-like-hmm-try-again",
+      "title": "Build the 'Secret Message' section with a password-protected reveal. Show a password input field and a hint text 'What do you call me?'. When the user enters the correct password (case-insensitive), hide the input and reveal a heartfelt paragraph: 'You are only mine, Ananya. No matter where life takes us, I will always choose you — today, tomorrow, and every day after. You are my calm, my happiness, and my home. Forever and always, only yours. 💍'. If the wrong password is entered, show a gentle error message like 'Hmm, try again 🥺'.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-footer-section-display-the-text-forever-yours-viaan-in-an-elegant-font-add-a-small-looping-floating-heart-animation-in-the-footer",
+      "title": "Build the footer section. Display the text 'Forever yours, Viaan.' in an elegant font. Add a small looping floating heart animation in the footer.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-soft-background-music-toggle-button-fixed-position-top-right-or-bottom-right-corner-the-button-should-display-a-musical-note-icon-or-emoji-clicking-it-toggles-autoplay-of-a-romantic-instrumental-audio-track-use-a-royalty-free-audio-file-hosted-as-a-static-asset-frontend-public-assets-music-mp3-or-a-cdn-hosted-public-domain-track-url-the-button-should-have-a-glowing-pulsing-animation-when-music-is-playing",
+      "title": "Add a soft background music toggle button (fixed position, top-right or bottom-right corner). The button should display a musical note icon or 🎵 emoji. Clicking it toggles autoplay of a romantic instrumental audio track. Use a royalty-free audio file hosted as a static asset (frontend/public/assets/music.mp3) or a CDN-hosted public domain track URL. The button should have a glowing/pulsing animation when music is playing.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-smooth-scroll-behavior-for-the-entire-page-add-subtle-micro-interactions-on-all-interactive-buttons-slight-scale-up-on-hover-soft-glow-or-shadow-pulse-on-click-all-section-transitions-should-use-fade-in-animations-as-they-enter-the-viewport-intersection-observer-or-css-animation-on-scroll",
+      "title": "Implement smooth scroll behavior for the entire page. Add subtle micro-interactions on all interactive buttons: slight scale-up on hover, soft glow or shadow pulse on click. All section transitions should use fade-in animations as they enter the viewport (intersection observer or CSS animation on scroll).",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-secretmessagesection-component-so-that-the-password-check-accepts-any-of-the-following-values-case-insensitive-baby-bobo-gugi-jaanu-pati-darling-pagal-mine-viaanu-remove-the-previous-single-password-check-viaan-and-replace-it-with-a-check-against-this-list-all-other-behavior-reveal-animation-error-message-hint-text-must-remain-unchanged",
+      "title": "Update the SecretMessageSection component so that the password check accepts any of the following values (case-insensitive): 'baby', 'bobo', 'gugi', 'jaanu', 'pati', 'darling', 'pagal', 'mine', 'viaanu'. Remove the previous single-password check ('viaan') and replace it with a check against this list. All other behavior (reveal animation, error message, hint text) must remain unchanged.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-use-the-uploaded-image-pic-jpeg-two-arms-side-by-side-as-the-photo-displayed-in-the-our-little-comparison-section-save-it-as-a-static-asset-at-frontend-public-assets-comparison-jpg-and-render-it-inside-the-existing-soft-rounded-frame-with-subtle-shadow-and-hover-zoom-animation-already-specified-for-that-section",
+      "title": "Use the uploaded image (pic.jpeg — two arms side by side) as the photo displayed in the 'Our Little Comparison 🤍' section. Save it as a static asset at frontend/public/assets/comparison.jpg and render it inside the existing soft rounded frame with subtle shadow and hover zoom animation already specified for that section.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Loading screen: 'Preparing something special for Ananya…'",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Hero section with heading 'For My Ananya 🤍', subheading, floating hearts background, and popup button",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "'Things I Love About You' section with animated hover cards",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "'Our Future' timeline section with sparkle animation and cute milestones",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Interactive Love Counter with infinite increment button and 'Still not enough.' text",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Password-protected Secret Message section revealing heartfelt paragraph",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Footer with 'Forever yours, Viaan.' and floating heart animation",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Secret message password accepts multiple values: baby, bobo, gugi, jaanu, pati, darling, pagal, mine, viaanu (case-insensitive)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Remove background music feature and music toggle button entirely",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Replace secret message revealed content with long poetic message from Viaan to Ananya (signed 'YOUR PATI VIAAN UPADHYAY'), with soft fade-in animation",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-12",
+      "summary": "Add new 'Our Little Comparison 🤍' section with arms comparison photo in soft rounded frame, hover zoom, and poetic caption about being different but aligned",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "For My Ananya",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

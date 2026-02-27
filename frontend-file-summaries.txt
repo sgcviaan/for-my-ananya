@@ -1,0 +1,17 @@
+{
+  "frontend/src/index.css": "Global styles with OKLCH pastel romantic color system (soft pink, lavender, cream, baby peach), Google Fonts imports (Dancing Script, Playfair Display, Lato), smooth scroll, and all custom keyframe animations (float-up, float-gentle, pulse-glow, sparkle, fade-in-up, loading-pulse, bounce-heart, twinkle, music-pulse).",
+  "frontend/tailwind.config.js": "Extended Tailwind config with custom font families (handwritten Dancing Script, serif Playfair Display, sans Lato), romantic pastel color tokens, custom border radii, and romantic box shadow utilities.",
+  "frontend/src/hooks/useScrollAnimation.ts": "Custom React hook using IntersectionObserver to detect when elements enter the viewport and return a visibility boolean for fade-in animations.",
+  "frontend/src/components/LoadingScreen.tsx": "Full-screen loading overlay with animated pulsing heart SVG, \"Preparing something special for Ananya…\" text, and auto-fade-out after ~2.5 seconds.",
+  "frontend/src/components/FloatingHearts.tsx": "Generates randomized floating heart SVGs that animate upward from the bottom of the screen for the hero background effect.",
+  "frontend/src/components/RomanticModal.tsx": "Centered modal popup with pastel styling displaying \"Too late, you're already mine forever 💍\" with animated hearts and a dismiss button.",
+  "frontend/src/components/HeroSection.tsx": "Full-screen hero section with \"For My Ananya 🤍\" heading, \"Made with love by Viaan\" subheading, floating hearts background, hero background image, and glowing \"Click if you love me\" CTA button.",
+  "frontend/src/components/ThingsILoveSection.tsx": "Responsive 3-column grid of 6 romantic love cards with pastel gradients, emoji icons, hover lift animations, and heartfelt descriptions for each love item.",
+  "frontend/src/components/OurFutureSection.tsx": "Vertical alternating timeline section with 6 future milestones, sparkle SVG animations, lavender gradient background, and styled milestone cards.",
+  "frontend/src/components/LoveCounterSection.tsx": "Interactive love counter section with a circular display, increment button, burst emoji animation on click, and \"Still not enough.\" static text below.",
+  "frontend/src/components/SecretMessageSection.tsx": "Password-protected section accepting nine valid nicknames; on unlock, displays the full long poetic love letter from Viaan to Ananya with soft fade-in animation and left-aligned formatted paragraphs.",
+  "frontend/src/components/Footer.tsx": "Footer with \"Forever yours, Viaan.\" in Dancing Script, floating heart row animation, caffeine.ai attribution with UTM tracking, and dynamic year.",
+  "frontend/src/components/MusicToggle.tsx": "Fixed bottom-right music toggle button that plays/pauses background audio with a pulsing glow animation when playing and loading spinner state.",
+  "frontend/src/App.tsx": "Root app component managing loading screen and modal state, rendering all page sections including the new OurLittleComparisonSection; MusicToggle has been removed.",
+  "frontend/src/components/OurLittleComparisonSection.tsx": "New scroll-animated section titled \"Our Little Comparison 🤍\" displaying the arms comparison photo in a soft rounded frame with hover zoom animation and the poetic caption below."
+}

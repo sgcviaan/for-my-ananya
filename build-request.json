@@ -1,0 +1,44 @@
+{
+  "kind": "build_request",
+  "title": "Add arms comparison photo to 'Our Little Comparison 🤍' section",
+  "projectName": "For My Ananya",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-12",
+      "text": "Use the uploaded image (pic.jpeg — two arms side by side) as the photo displayed in the 'Our Little Comparison 🤍' section. Save it as a static asset at frontend/public/assets/comparison.jpg and render it inside the existing soft rounded frame with subtle shadow and hover zoom animation already specified for that section.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "i signed up now make it"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The uploaded arms photo (pic.jpeg) is saved as frontend/public/assets/comparison.jpg and committed as a static asset.",
+        "The 'Our Little Comparison 🤍' section displays this image inside a soft rounded frame with a subtle shadow.",
+        "The image has a gentle hover zoom animation.",
+        "The poetic caption ('This picture looks simple to anyone else…') appears below the image.",
+        "No other sections are modified."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify any section other than 'Our Little Comparison 🤍'.",
+    "Do not re-introduce the music toggle or any audio feature.",
+    "Do not alter the secret message content or password logic."
+  ],
+  "nonGoals": [
+    "Redesigning or rewriting any existing sections.",
+    "Adding new sections beyond 'Our Little Comparison 🤍'.",
+    "Changing the password-protected secret message text."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": [
+      "Lightly enhance warmth and soft-focus the background to give a romantic aesthetic feel (pic.jpeg > comparison.dim_930x1240.jpg)"
+    ]
+  }
+}

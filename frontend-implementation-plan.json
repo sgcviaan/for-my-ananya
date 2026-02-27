@@ -1,0 +1,35 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Add arms comparison photo to 'Our Little Comparison 🤍' section",
+  "requirements": [
+    {
+      "id": "REQ-12",
+      "summary": "Display the uploaded arms comparison photo (pic.jpeg) in the 'Our Little Comparison 🤍' section with romantic styling and hover animations",
+      "acceptanceCriteria": [
+        "The uploaded arms photo (pic.jpeg) is saved as frontend/public/assets/comparison.jpg and committed as a static asset.",
+        "The 'Our Little Comparison 🤍' section displays this image inside a soft rounded frame with a subtle shadow.",
+        "The image has a gentle hover zoom animation.",
+        "The poetic caption ('This picture looks simple to anyone else…') appears below the image.",
+        "No other sections are modified."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/comparison.jpg",
+          "operation": "create",
+          "description": "Save the uploaded arms comparison photo (pic.jpeg) as a static asset. This will be the enhanced version from frontend/public/assets/generated/comparison.dim_930x1240.jpg with warmth and soft-focus applied for romantic aesthetic."
+        },
+        {
+          "path": "frontend/src/components/OurLittleComparisonSection.tsx",
+          "operation": "create",
+          "description": "Create a new scroll-animated section component that displays the arms comparison photo inside a soft rounded frame with subtle shadow. Include the image reference to frontend/public/assets/comparison.jpg, apply hover zoom animation using CSS transforms, and render the poetic caption ('This picture looks simple to anyone else, but to me, it's everything. Your hand in mine, our little world captured forever. 🤍') below the image. Use the existing useScrollAnimation hook for entrance animations and match the styling patterns from other sections (soft-pink/lavender palette, rounded corners, gentle shadows)."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import and render the new OurLittleComparisonSection component in the appropriate position within the page flow, ensuring it appears as a distinct section alongside existing sections like ThingsILoveSection, OurFutureSection, etc. Do not modify any other sections or their content."
+        }
+      ]
+    }
+  ]
+}
